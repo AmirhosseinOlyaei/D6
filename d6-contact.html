@@ -1,21 +1,76 @@
 <html>
 
 <head>
-
-  <title>5 Pages - Contact</title>
+  <title>5 Pages - About</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" rel="stylesheet" type="text/css">
-
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@2.46.0/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="menu.js"></script>
 </head>
 
 <body>
+  <header>
+    <div class=" bg-base-100">
+      <a class="btn btn-ghost normal-case"><span style="font-size:30px;cursor:pointer"
+          onclick="openNav()">&#9776;menu</span></a>
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="index.html">Home</a>
+          <a href="d6-program.html">Programs</a>
+          <a href="d6-about.html">About</a>
+          <a href="d6-contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </header>
 
-<main>
-  <section>
-    <h2>Contact</h2>
-  </section>
-</main>
+  <main>
+    <div class="bg-white rounded-xl shadow-md">
+      <a href="index.html"><img src="https://www.ulem.org/static/media/ulem.1919320d.png" alt="ULEM"></a>
+    </div>
+  </main>
 
+  <main style="font-size: 10vw;">
+
+    <div class="p-8">
+      <div class="uppercase tracking-wide text-indigo-500 font-semibold">Social media</div>
+      <p class="mt-2 text-slate-500"><a href="https://www.linkedin.com/in/theulem" target="_blank" class="hover:underline">LinkedIn</a></p>
+      <a href="https://www.instagram.com/theulem2/" target="_blank" class="block mt-1 leading-tight font-medium text-black hover:underline">Instagram</a>
+      <a href="https://www.facebook.com/ULEMORG/" target="_blank" class="block mt-1 leading-tight font-medium text-black hover:underline">facebook</a>
+      <a href="https://twitter.com/theULEM" target="_blank" class="block mt-1 leading-tight font-medium text-black hover:underline">Twitter</a>
+    </div>
+
+    <section class="p-8">
+      <h2>Instructor:</h2>
+      <p>Othneil Uter</p><br>
+      <h2>Coder:</h2>
+      <p>Amirhossein Olyaei | <a href="https://www.linkedin.com/in/amirhossein-olyaei-4785403a/"
+          target="_blank">LinkedIn</a></p>
+    </section>
+  </main>
+
+
+  <footer class="p-4 bg-white rounded-lg shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800">
+    <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2022 <a href="https://www.ulem.org/"
+        class="hover:underline">ULEM Code Academy™</a>. All Rights Reserved.
+    </span>
+    <ul class="flex flex-wrap items-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">
+      <li>
+        <a href="d6-program.html" class="mr-4 hover:underline md:mr-6">Programs</a>
+      </li>
+      <li>
+        <a href="d6-about.html" class="mr-4 hover:underline md:mr-6 ">About</a>
+      </li>
+      <li>
+        <a href="d6-contact.html" class="mr-4 hover:underline md:mr-6">Address</a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/theulem" class="hover:underline">Social media</a>
+      </li>
+    </ul>
+  </footer>
 </body>
 
-</html
+</html>

@@ -1,44 +1,83 @@
 <html>
 
 <head>
-
-  <title>5 Pages - Program</title>
+  <title>5 Pages</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" rel="stylesheet" type="text/css">
-
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@2.46.0/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="menu.js"></script>
 </head>
 
 <body>
+  <header>
+    <div class=" bg-base-100">
+      <a class="btn btn-ghost normal-case"><span style="font-size:30px;cursor:pointer"
+          onclick="openNav()">&#9776;menu</span></a>
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="index.html">Home</a>
+          <a href="d6-program.html">Programs</a>
+          <a href="d6-about.html">About</a>
+          <a href="d6-contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </header>
 
-<div>
-<ul>
-  <li><a href="https://www.w3schools.com/html/default.asp" target="_blank">
-    <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_640.png" alt="HTML" style=width:42px;height:42px;">
-    HTML</a></li>
-
-  <li><a href="https://www.w3schools.com/css/default.asp" target="_blank">
-    <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_960_720.png" alt="HTML" style=width:42px;height:42px;">
-    CSS</a></li>
-
-  <li><a href="https://www.w3schools.com/js/default.asp" target="_blank">
-    <img src="https://www.citypng.com/public/uploads/small/11662226392uom4gsi9ddb1c81ipfx2u4imargvwq7uskhdui1pj4f6xufjz0jkfzqzduhjuifts0dzcnykgszw6isfutq2nlwb51ef4gm0dt8d.png" alt="HTML" style=width:42px;height:42px;">
-    JavaScript</a></li>
-</ul>
-</div>
-
-<main>
-  <section>
-
-    <h2>Program:</h2>
-      <details>
-        <summary><a href="http://msimbo.herokuapp.com/" target="_blank">Code Adademy at ULEM</a></summary>
-        <p>A 20 weeks of 120 hours coding technology training program and the professional development for ULEM’s MSIMBO program.</p>
-      </details>
-
-  </section>
-</main>
+  <main>
+    <div class="bg-white rounded-xl shadow-md">
+      <a href="index.html"><img src="https://www.ulem.org/static/media/ulem.1919320d.png" alt="ULEM"></a>
+    </div>
+  </main>
 
 
+  <div class="flex-row space-x-4 font-mono text-gray font-bold leading-10 p-3" style="font-size: 4vw;">
+    <ul>
+      <li>
+        <div class="rounded-lg shadow-lg"><a href="https://www.w3schools.com/html/default.asp" target="_blank">
+            <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_640.png" alt="HTML"
+              style=width:42px;height:42px;">
+            HTML</a></div>
+      </li>
+      <li>
+        <div class="rounded-lg shadow-lg"><a href="https://www.w3schools.com/css/default.asp" target="_blank">
+            <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_960_720.png" alt="HTML"
+              style=width:42px;height:42px;">
+            CSS</a></div>
+      </li>
+      <li>
+        <div class="rounded-lg shadow-lg"><a href="https://www.w3schools.com/js/default.asp" target="_blank">
+            <img
+              src="https://www.citypng.com/public/uploads/small/11662226392uom4gsi9ddb1c81ipfx2u4imargvwq7uskhdui1pj4f6xufjz0jkfzqzduhjuifts0dzcnykgszw6isfutq2nlwb51ef4gm0dt8d.png"
+              alt="HTML" style=width:42px;height:42px;">
+            JavaScript</a></div>
+      </li>
+    </ul>
+  </div>
+
+  </main>
+
+  <footer class="p-4 bg-white rounded-lg shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800">
+    <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2022 <a href="https://www.ulem.org/"
+        class="hover:underline">ULEM Code Academy™</a>. All Rights Reserved.
+    </span>
+    <ul class="flex flex-wrap items-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">
+      <li>
+        <a href="d6-program.html" class="mr-4 hover:underline md:mr-6">Programs</a>
+      </li>
+      <li>
+        <a href="d6-about.html" class="mr-4 hover:underline md:mr-6 ">About</a>
+      </li>
+      <li>
+        <a href="d6-contact.html" class="mr-4 hover:underline md:mr-6">Address</a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/theulem" class="hover:underline">Social media</a>
+      </li>
+    </ul>
+  </footer>
 </body>
 
 </html>
